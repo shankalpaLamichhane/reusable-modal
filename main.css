@@ -1,0 +1,59 @@
+body{
+    padding: 10px;
+    margin: 0;
+      font-family: sans-serif;
+  }
+  
+  .modal{
+      display: block
+  }
+  
+  .modal-container {
+       background: gainsboro;
+       padding: 50px;
+     display: none;
+  }
+  
+  .overlay {
+      top:0;
+      position: fixed;
+      display: none
+  }
+
+  .button{
+    padding: 5px;
+  }
+  
+  .overlay.modal-show,.overlay.modal-show .modal-container {
+     display: block;
+  } 
+  
+  
+  .close-modal {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    opacity: 1;
+  }
+  .close-modal:before, .close-modal:after {
+    position: absolute;
+    left: 5px;
+    content: ' ';
+    height: 10px;
+    width: 1px;
+    background-color: #333;
+  }
+  .close-modal:before {
+    transform: rotate(45deg);
+  }
+  .close-modal:after {
+    transform: rotate(-45deg);
+  }
